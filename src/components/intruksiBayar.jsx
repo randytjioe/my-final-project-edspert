@@ -30,7 +30,7 @@ export default function IntruksiBayar() {
         display="flex"
         width="100%"
         height="971px"
-        padding="50px"
+        padding="50px 60px"
         flexDirection="column"
         justifyContent="center"
         gap="20px"
@@ -47,27 +47,31 @@ export default function IntruksiBayar() {
             <Link as={ReachLink} to={`/checkout`}>
               <Image src={leftArrow} width="24px" height="12px" />
             </Link>
-            <Flex
-              color="var(--text-subdued, #6D7175)"
-              fontFamily="Mulish"
-              fontSize="12px"
-              fontStyle="normal"
-              fontWeight="700"
-              lineHeight="22px"
-            >
-              Checkout
-            </Flex>
+            <Link as={ReachLink} to={`/checkout`}>
+              <Flex
+                color="var(--text-subdued, #6D7175)"
+                fontFamily="Mulish"
+                fontSize="12px"
+                fontStyle="normal"
+                fontWeight="700"
+                lineHeight="22px"
+              >
+                Checkout
+              </Flex>
+            </Link>
             <Image src={rightArrow} width="4px" height="9px" />
-            <Flex
-              color="var(--border-primary, #1097E7)"
-              fontFamily="Mulish"
-              fontSize="12px"
-              fontStyle="normal"
-              fontWeight="500"
-              lineHeight="22px"
-            >
-              Instruksi Bayar
-            </Flex>
+            <Link as={ReachLink} to={`/instruksi-bayar`}>
+              <Flex
+                color="var(--border-primary, #1097E7)"
+                fontFamily="Mulish"
+                fontSize="12px"
+                fontStyle="normal"
+                fontWeight="500"
+                lineHeight="22px"
+              >
+                Instruksi Bayar
+              </Flex>
+            </Link>
           </Flex>
           <Flex
             color="var(--text-default, #131313)"

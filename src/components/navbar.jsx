@@ -45,7 +45,7 @@ export default function Navbar() {
           alignItems="center"
           gap="20px"
         >
-          <Menu>
+          <Menu fontFamily="Be Vietnam Pro">
             <MenuButton
               as={Button}
               rightIcon={<IoIosArrowDown />}
@@ -60,9 +60,9 @@ export default function Navbar() {
             >
               Program
             </MenuButton>
-            <MenuList>
+            <MenuList fontFamily="Be Vietnam Pro">
               <MenuItem>Online Course</MenuItem>
-              <MenuItem>Mini bootcamp</MenuItem>
+              <MenuItem>Mini Bootcamp</MenuItem>
               <MenuItem>Bootcamp</MenuItem>
             </MenuList>
           </Menu>
@@ -79,11 +79,11 @@ export default function Navbar() {
               fontWeight="700"
               lineHeight="normal"
             >
-              Bidang ilmu
+              Bidang Ilmu
             </MenuButton>
-            <MenuList>
-              <MenuItem>Digital marketing</MenuItem>
-              <MenuItem>Product management</MenuItem>
+            <MenuList fontFamily="Be Vietnam Pro">
+              <MenuItem>Digital Marketing</MenuItem>
+              <MenuItem>Product Management</MenuItem>
               <MenuItem>English</MenuItem>
               <MenuItem>Programming</MenuItem>
             </MenuList>
@@ -101,12 +101,12 @@ export default function Navbar() {
               fontWeight="700"
               lineHeight="normal"
             >
-              Tentang edspert
+              Tentang Edspert
             </MenuButton>
-            <MenuList>
+            <MenuList fontFamily="Be Vietnam Pro">
               <MenuItem>Bantuan</MenuItem>
-              <MenuItem>Kontak kami</MenuItem>
-              <MenuItem>Media sosial</MenuItem>
+              <MenuItem>Kontak Kami</MenuItem>
+              <MenuItem>Media Sosial</MenuItem>
             </MenuList>
           </Menu>
           <Button

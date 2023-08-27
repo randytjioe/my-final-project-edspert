@@ -50,27 +50,31 @@ export default function Checkout(props) {
             <Link as={ReachLink} to={`/detail/${localStorage.getItem("id")}`}>
               <Image src={leftArrow} width="24px" height="12px" />
             </Link>
-            <Flex
-              color="var(--border-primary, #1097E7)"
-              fontFamily="Mulish"
-              fontSize="12px"
-              fontStyle="normal"
-              fontWeight="700"
-              lineHeight="22px"
-            >
-              Checkout
-            </Flex>
+            <Link as={ReachLink} to={`/checkout`}>
+              <Flex
+                color="var(--border-primary, #1097E7)"
+                fontFamily="Mulish"
+                fontSize="12px"
+                fontStyle="normal"
+                fontWeight="700"
+                lineHeight="22px"
+              >
+                Checkout
+              </Flex>
+            </Link>
             <Image src={rightArrow} width="4px" height="9px" />
-            <Flex
-              color="var(--text-subdued, #6D7175)"
-              fontFamily="Mulish"
-              fontSize="12px"
-              fontStyle="normal"
-              fontWeight="500"
-              lineHeight="22px"
-            >
-              Instruksi Bayar
-            </Flex>
+            <Link as={ReachLink} to={`/instruksi-bayar`}>
+              <Flex
+                color="var(--text-subdued, #6D7175)"
+                fontFamily="Mulish"
+                fontSize="12px"
+                fontStyle="normal"
+                fontWeight="500"
+                lineHeight="22px"
+              >
+                Instruksi Bayar
+              </Flex>
+            </Link>
           </Flex>
           <Flex
             color="var(--text-default, #131313)"
@@ -696,10 +700,11 @@ export default function Checkout(props) {
               yang berlaku.
             </Flex>
             <Flex display="flex" alignItems="center" gap="282px">
-              <Flex
+              <Button
                 display="flex"
                 alignItems="center"
                 gap="8px"
+                background={"white"}
                 onClick={(val) => {
                   navigate("/");
                 }}
@@ -715,7 +720,7 @@ export default function Checkout(props) {
                 >
                   Batalkan
                 </Flex>
-              </Flex>
+              </Button>
               <Button
                 display="flex"
                 width="205px"

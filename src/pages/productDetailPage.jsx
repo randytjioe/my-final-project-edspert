@@ -35,6 +35,21 @@ export default function ProductDetailPage() {
             detail:
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
           },
+          {
+            nama: "Materi Bootcamp Laravel 4",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
+          {
+            nama: "Materi Bootcamp Laravel 5",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
+          {
+            nama: "Materi Bootcamp Laravel 6",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
         ],
       },
     },
@@ -54,17 +69,32 @@ export default function ProductDetailPage() {
         posisi_mentor_2: "Developer at Widya Edu",
         silabus: [
           {
-            nama: "Pengenalan Programming Laravel",
+            nama: "Pengenalan Programming ReactJS",
             detail:
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
           },
           {
-            nama: "Materi Bootcamp Laravel 2",
+            nama: "Materi Bootcamp ReactJS 2",
             detail:
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
           },
           {
-            nama: "Materi Bootcamp Laravel 3",
+            nama: "Materi Bootcamp ReactJS 3",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
+          {
+            nama: "Materi Bootcamp ReactJS 4",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
+          {
+            nama: "Materi Bootcamp ReactJS 5",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
+          {
+            nama: "Materi Bootcamp ReactJS 6",
             detail:
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
           },
@@ -87,17 +117,32 @@ export default function ProductDetailPage() {
         posisi_mentor_2: "Developer at Widya Edu",
         silabus: [
           {
-            nama: "Pengenalan Programming Laravel",
+            nama: "Pengenalan Programming Python",
             detail:
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
           },
           {
-            nama: "Materi Bootcamp Laravel 2",
+            nama: "Materi Bootcamp Python 2",
             detail:
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
           },
           {
-            nama: "Materi Bootcamp Laravel 3",
+            nama: "Materi Bootcamp Python 3",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
+          {
+            nama: "Materi Bootcamp Python 4",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
+          {
+            nama: "Materi Bootcamp Python 5",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
+          {
+            nama: "Materi Bootcamp Python 6",
             detail:
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
           },
@@ -120,17 +165,32 @@ export default function ProductDetailPage() {
         posisi_mentor_2: "Developer at Widya Edu",
         silabus: [
           {
-            nama: "Pengenalan Programming Laravel",
+            nama: "Pengenalan Programming Excel",
             detail:
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
           },
           {
-            nama: "Materi Bootcamp Laravel 2",
+            nama: "Materi Bootcamp Excel 2",
             detail:
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
           },
           {
-            nama: "Materi Bootcamp Laravel 3",
+            nama: "Materi Bootcamp Excel 3",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
+          {
+            nama: "Materi Bootcamp Excel 4",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
+          {
+            nama: "Materi Bootcamp Excel 5",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
+          {
+            nama: "Materi Bootcamp Excel 6",
             detail:
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
           },
@@ -153,17 +213,32 @@ export default function ProductDetailPage() {
         posisi_mentor_2: "Developer at Widya Edu",
         silabus: [
           {
-            nama: "Pengenalan Programming Laravel",
+            nama: "Pengenalan Programming Flutter",
             detail:
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
           },
           {
-            nama: "Materi Bootcamp Laravel 2",
+            nama: "Materi Bootcamp Flutter 2",
             detail:
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
           },
           {
-            nama: "Materi Bootcamp Laravel 3",
+            nama: "Materi Bootcamp Flutter 3",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
+          {
+            nama: "Materi Bootcamp Flutter 4",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
+          {
+            nama: "Materi Bootcamp Flutter 5",
+            detail:
+              "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
+          },
+          {
+            nama: "Materi Bootcamp Flutter 6",
             detail:
               "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden.",
           },
