@@ -1,6 +1,7 @@
 import {
   Flex,
   Button,
+  Link,
   Menu,
   MenuButton,
   MenuList,
@@ -10,7 +11,8 @@ import {
   MenuOptionGroup,
   MenuDivider,
 } from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom";
+
+import { Link as ReachLink, useNavigate } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function Navbar() {
@@ -25,17 +27,18 @@ export default function Navbar() {
         alignItems="center"
         justifyContent="space-between"
       >
-        <Flex
-          color="#FFF"
-          fontFamily="Be Vietnam Pro"
-          fontSize="20px"
-          fontStyle="normal"
-          fontWeight="700"
-          lineHeight="normal"
-        >
-          {" "}
-          LOGO
-        </Flex>
+        <Link as={ReachLink} to="/">
+          <Flex
+            color="#FFF"
+            fontFamily="Be Vietnam Pro"
+            fontSize="20px"
+            fontStyle="normal"
+            fontWeight="700"
+            lineHeight="normal"
+          >
+            LOGO
+          </Flex>
+        </Link>
         <Flex
           display="inline-flex"
           justifyContent="center"
