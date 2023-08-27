@@ -1,6 +1,7 @@
 import { Flex, Image } from "@chakra-ui/react";
 import Frame from "../assets/Frame.png";
-export default function HeroProductDetail() {
+export default function HeroProductDetail(props) {
+  const data = props.data[localStorage.getItem("id") - 1];
   return (
     <>
       {" "}
@@ -28,8 +29,7 @@ export default function HeroProductDetail() {
               fontWeight="600"
               lineHeight="60px"
             >
-              {" "}
-              Programming Laravel
+              {data.nama_program}
             </Flex>
             <Flex
               color="var(--neutral-full-white, #FFF)"
@@ -39,7 +39,7 @@ export default function HeroProductDetail() {
               fontWeight="400"
               lineHeight="60px"
             >
-              Getting Started with Laravel 9
+              {data.ket_program}
             </Flex>
             <Flex
               display="flex"
@@ -72,7 +72,7 @@ export default function HeroProductDetail() {
                     fontWeight="700"
                     lineHeight="30px"
                   >
-                    William Hartono
+                    {data.detail?.nama_mentor_1}
                   </Flex>
                   <Flex
                     color="var(--neutral-off-white, #FCFCFC)"
@@ -82,7 +82,7 @@ export default function HeroProductDetail() {
                     fontWeight="400"
                     lineHeight="30px"
                   >
-                    Developer at Widya Edu
+                    {data.detail?.posisi_mentor_1}
                   </Flex>
                 </Flex>
                 <Flex flexDir="column">
@@ -94,7 +94,7 @@ export default function HeroProductDetail() {
                     fontWeight="700"
                     lineHeight="30px"
                   >
-                    Farel Prayoga
+                    {data.detail?.nama_mentor_2}
                   </Flex>
                   <Flex
                     color="var(--neutral-off-white, #FCFCFC)"
@@ -104,7 +104,7 @@ export default function HeroProductDetail() {
                     fontWeight="400"
                     lineHeight="30px"
                   >
-                    Developer at Widya Edu
+                    {data.detail?.posisi_mentor_2}
                   </Flex>
                 </Flex>
               </Flex>

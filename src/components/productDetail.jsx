@@ -4,8 +4,10 @@ import Product1 from "../assets/product.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Check from "../assets/check.png";
 import { useNavigate } from "react-router-dom";
-export default function ProductDetail() {
+export default function ProductDetail(props) {
   const navigate = useNavigate();
+  const data = props.data[localStorage.getItem("id") - 1];
+  const detail = props.data[localStorage.getItem("id") - 1].detail.silabus;
   return (
     <>
       <Flex
@@ -113,7 +115,7 @@ export default function ProductDetail() {
                 lineHeight="22px"
                 textDecorationLine="line-through"
               >
-                Rp. 125.000
+                {data.harga_awal}
               </Flex>
               <Flex
                 color="var(--secondary-three, #FF6A28)"
@@ -123,7 +125,7 @@ export default function ProductDetail() {
                 fontWeight="600"
                 lineHeight="28px"
               >
-                Rp. 99.000
+                {data.harga_promo}
               </Flex>
             </Flex>
             <Button
@@ -177,162 +179,35 @@ export default function ProductDetail() {
               borderRadius="25px"
               background="#FFF"
             >
-              <Flex display="flex" alignItems="flex-start" gap="10px">
-                <Image src={Check} width="20px" height="20px" />
-                <Flex
-                  color="#000"
-                  fontFamily="Be Vietnam Pro"
-                  fontSize="20px"
-                  fontStyle="normal"
-                  fontWeight="600"
-                  lineHeight="20px"
-                >
-                  Pengenalan Programming Laravel
-                </Flex>
-              </Flex>
-              <Flex
-                color="#868686"
-                fontFamily="Be Vietnam Pro"
-                fontSize="14px"
-                fontStyle="normal"
-                fontWeight="400"
-                lineHeight="20px"
-              >
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden.
-              </Flex>
-              <Flex display="flex" alignItems="flex-start" gap="10px">
-                <Image src={Check} width="20px" height="20px" />
-                <Flex
-                  color="#000"
-                  fontFamily="Be Vietnam Pro"
-                  fontSize="20px"
-                  fontStyle="normal"
-                  fontWeight="600"
-                  lineHeight="20px"
-                >
-                  Materi Bootcamp Laravel 2
-                </Flex>
-              </Flex>
-              <Flex
-                color="#868686"
-                fontFamily="Be Vietnam Pro"
-                fontSize="14px"
-                fontStyle="normal"
-                fontWeight="400"
-                lineHeight="20px"
-              >
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden.
-              </Flex>
-              <Flex display="flex" alignItems="flex-start" gap="10px">
-                <Image src={Check} width="20px" height="20px" />
-                <Flex
-                  color="#000"
-                  fontFamily="Be Vietnam Pro"
-                  fontSize="20px"
-                  fontStyle="normal"
-                  fontWeight="600"
-                  lineHeight="20px"
-                >
-                  Materi Bootcamp Laravel 3
-                </Flex>
-              </Flex>
-              <Flex
-                color="#868686"
-                fontFamily="Be Vietnam Pro"
-                fontSize="14px"
-                fontStyle="normal"
-                fontWeight="400"
-                lineHeight="20px"
-              >
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden.
-              </Flex>
-              <Flex display="flex" alignItems="flex-start" gap="10px">
-                <Image src={Check} width="20px" height="20px" />
-                <Flex
-                  color="#000"
-                  fontFamily="Be Vietnam Pro"
-                  fontSize="20px"
-                  fontStyle="normal"
-                  fontWeight="600"
-                  lineHeight="20px"
-                >
-                  Materi Bootcamp Laravel 4
-                </Flex>
-              </Flex>
-              <Flex
-                color="#868686"
-                fontFamily="Be Vietnam Pro"
-                fontSize="14px"
-                fontStyle="normal"
-                fontWeight="400"
-                lineHeight="20px"
-              >
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden.
-              </Flex>
-              <Flex display="flex" alignItems="flex-start" gap="10px">
-                <Image src={Check} width="20px" height="20px" />
-                <Flex
-                  color="#000"
-                  fontFamily="Be Vietnam Pro"
-                  fontSize="20px"
-                  fontStyle="normal"
-                  fontWeight="600"
-                  lineHeight="20px"
-                >
-                  Materi Bootcamp Laravel 5
-                </Flex>
-              </Flex>
-              <Flex
-                color="#868686"
-                fontFamily="Be Vietnam Pro"
-                fontSize="14px"
-                fontStyle="normal"
-                fontWeight="400"
-                lineHeight="20px"
-              >
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden.
-              </Flex>
-              <Flex display="flex" alignItems="flex-start" gap="10px">
-                <Image src={Check} width="20px" height="20px" />
-                <Flex
-                  color="#000"
-                  fontFamily="Be Vietnam Pro"
-                  fontSize="20px"
-                  fontStyle="normal"
-                  fontWeight="600"
-                  lineHeight="20px"
-                >
-                  Materi Bootcamp Laravel 6
-                </Flex>
-              </Flex>
-              <Flex
-                color="#868686"
-                fontFamily="Be Vietnam Pro"
-                fontSize="14px"
-                fontStyle="normal"
-                fontWeight="400"
-                lineHeight="20px"
-              >
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden.
-              </Flex>
+              {detail.map((val) => {
+                return (
+                  <>
+                    <Flex display="flex" alignItems="flex-start" gap="10px">
+                      <Image src={Check} width="20px" height="20px" />
+                      <Flex
+                        color="#000"
+                        fontFamily="Be Vietnam Pro"
+                        fontSize="20px"
+                        fontStyle="normal"
+                        fontWeight="600"
+                        lineHeight="20px"
+                      >
+                        {val.nama}
+                      </Flex>
+                    </Flex>
+                    <Flex
+                      color="#868686"
+                      fontFamily="Be Vietnam Pro"
+                      fontSize="14px"
+                      fontStyle="normal"
+                      fontWeight="400"
+                      lineHeight="20px"
+                    >
+                      {val.detail}
+                    </Flex>
+                  </>
+                );
+              })}
             </Flex>
 
             <Flex

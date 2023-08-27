@@ -80,7 +80,7 @@ export default function Product(props) {
                         lineHeight="20px"
                       >
                         {" "}
-                        Programming Laravel
+                        {val.nama_program}
                       </Flex>
                       <Flex
                         color="#FFF"
@@ -90,7 +90,7 @@ export default function Product(props) {
                         fontWeight="400"
                         lineHeight="20px"
                       >
-                        (Getting Started with Laravel 9)
+                        ({val.ket_program})
                       </Flex>
                     </Flex>
                   </Flex>

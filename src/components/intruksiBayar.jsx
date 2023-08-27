@@ -266,7 +266,7 @@ export default function IntruksiBayar() {
                   fontWeight="600"
                   lineHeight="28px"
                 >
-                  Rp. 400.000
+                  Rp. 860.000
                 </Flex>
               </Flex>
             </Flex>

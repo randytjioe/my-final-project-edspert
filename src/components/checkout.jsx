@@ -4,6 +4,7 @@ import atas from "../assets/atas.png";
 import mandiri from "../assets/mandiri.png";
 import bca from "../assets/bca.png";
 import product from "../assets/product.png";
+import { IoIosArrowBack } from "react-icons/io";
 import {
   Flex,
   Image,
@@ -23,7 +24,8 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { Link as ReachLink, useNavigate } from "react-router-dom";
-export default function Checkout() {
+export default function Checkout(props) {
+  const data = props.data[localStorage.getItem("id") - 1];
   const navigate = useNavigate();
   return (
     <>
@@ -374,7 +376,7 @@ export default function Checkout() {
                     fontWeight="800"
                     lineHeight="25px"
                   >
-                    Programming Laravel
+                    {data.nama_program}
                   </Flex>
                   <Flex
                     color="#000"
@@ -384,7 +386,7 @@ export default function Checkout() {
                     fontWeight="800"
                     lineHeight="25px"
                   >
-                    Getting Started with Laravel 9
+                    {data.ket_program}
                   </Flex>
                 </Flex>
                 <Flex gap="12px">
@@ -406,7 +408,7 @@ export default function Checkout() {
                     fontWeight="600"
                     lineHeight="20px"
                   >
-                    September 2022
+                    {data.batch}
                   </Flex>
                   <Flex
                     color="rgba(0, 0, 0, 0.50)"
@@ -427,7 +429,7 @@ export default function Checkout() {
                   fontWeight="600"
                   lineHeight="20px"
                 >
-                  William Hartono, Farel Prayoga
+                  {data.mentor}
                 </Flex>
               </Flex>
             </Flex>
@@ -562,7 +564,7 @@ export default function Checkout() {
                       fontWeight="500"
                       lineHeight="22px"
                     >
-                      Rp. 700.000
+                      {data.harga_promo}
                     </Flex>
                   </Flex>
                   <Flex
@@ -676,7 +678,7 @@ export default function Checkout() {
                     fontWeight="700"
                     lineHeight="22px"
                   >
-                    Rp. 400.000
+                    Rp. 860.000
                   </Flex>
                 </Flex>
               </Flex>
@@ -694,8 +696,15 @@ export default function Checkout() {
               yang berlaku.
             </Flex>
             <Flex display="flex" alignItems="center" gap="282px">
-              <Flex display="flex" alignItems="center" gap="8px">
-                <Image src={leftArrow} width="4px" height="9px" />
+              <Flex
+                display="flex"
+                alignItems="center"
+                gap="8px"
+                onClick={(val) => {
+                  navigate("/");
+                }}
+              >
+                <IoIosArrowBack width="4px" height="9px" />
                 <Flex
                   color="var(--text-default, #131313)"
                   fontFamily="Mulish"

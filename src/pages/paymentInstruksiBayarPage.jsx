@@ -9,7 +9,6 @@ export default function PaymentInstruksiBayarPage() {
   return (
     <>
       <Navbar />
-
       <IntruksiBayar />
       <Footer />
     </>
