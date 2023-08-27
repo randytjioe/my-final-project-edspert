@@ -14,6 +14,7 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  Link,
   RadioGroup,
   Center,
   Input,
@@ -21,7 +22,9 @@ import {
   Divider,
   Text,
 } from "@chakra-ui/react";
+import { Link as ReachLink, useNavigate } from "react-router-dom";
 export default function Checkout() {
+  const navigate = useNavigate();
   return (
     <>
       <Flex
@@ -42,7 +45,9 @@ export default function Checkout() {
           gap="28px"
         >
           <Flex display="flex" alignItems="center" gap="22px">
-            <Image src={leftArrow} width="24px" height="12px" />
+            <Link as={ReachLink} to={`/detail/${localStorage.getItem("id")}`}>
+              <Image src={leftArrow} width="24px" height="12px" />
+            </Link>
             <Flex
               color="var(--border-primary, #1097E7)"
               fontFamily="Mulish"
@@ -105,7 +110,7 @@ export default function Checkout() {
               alignItems="flex-start"
               gap="10px"
             ></Flex>
-            <Accordion allowToggle>
+            <Accordion defaultIndex={[0]} allowMultiple>
               <AccordionItem>
                 <h2>
                   <AccordionButton>
@@ -346,7 +351,7 @@ export default function Checkout() {
               <Center
                 width="119px"
                 height="110px"
-                flex-shrink="0"
+                flexShrink="0"
                 borderRadius="5px"
                 background="#2B3E58"
               >
@@ -430,10 +435,10 @@ export default function Checkout() {
               display="flex"
               height="74px"
               flexDirection="column"
-              justify-content="flex-end"
+              justifyContent="flex-end"
               alignItems="flex-start"
               gap="6px"
-              flex-shrink="0"
+              flexShrink="0"
             >
               <Flex
                 display="flex"
@@ -461,7 +466,7 @@ export default function Checkout() {
                   padding="10px 10px 10px 12px"
                   alignItems="center"
                   gap="10px"
-                  align-self="stretch"
+                  alignSelf="stretch"
                   borderRadius="4px 0px 0px 4px"
                   background="var(--surface-default, #FFF)"
                   placeholder="Masukkan kode promo"
@@ -472,9 +477,10 @@ export default function Checkout() {
                   height="48px"
                   padding="10px 16px"
                   flexDirection="column"
-                  justify-content="center"
+                  justifyContent="center"
                   alignItems="center"
                   gap="10px"
+                  _hover={{ color: "#2A61A8", background: "white" }}
                   borderRadius="0px 4px 4px 0px"
                   border="1px solid #ABB0B5"
                   background="#2A61A8"
@@ -710,9 +716,17 @@ export default function Checkout() {
                 justifyContent="center"
                 alignItems="center"
                 gap="10px"
+                _hover={{
+                  color: "#2A61A8",
+                  background: "white",
+                  border: "1px solid #2A61A8",
+                }}
                 borderRadius="50px"
                 background="#2A61A8"
                 color="white"
+                onClick={(val) => {
+                  navigate("/instruksi-bayar");
+                }}
               >
                 Bayar
               </Button>

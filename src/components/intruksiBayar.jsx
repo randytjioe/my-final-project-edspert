@@ -10,10 +10,12 @@ import {
   TabPanel,
   List,
   ListItem,
+  Link,
   ListIcon,
   OrderedList,
   UnorderedList,
 } from "@chakra-ui/react";
+import { Link as ReachLink, useNavigate } from "react-router-dom";
 import leftArrow from "../assets/left-arrow.png";
 import rightArrow from "../assets/right-arrow.png";
 import atas from "../assets/atas.png";
@@ -42,7 +44,9 @@ export default function IntruksiBayar() {
           gap="28px"
         >
           <Flex display="flex" alignItems="center" gap="22px">
-            <Image src={leftArrow} width="24px" height="12px" />
+            <Link as={ReachLink} to={`/checkout`}>
+              <Image src={leftArrow} width="24px" height="12px" />
+            </Link>
             <Flex
               color="var(--text-subdued, #6D7175)"
               fontFamily="Mulish"

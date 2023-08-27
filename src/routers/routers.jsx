@@ -14,7 +14,7 @@ const routers = [
     element: <ProductCheckoutPage />,
   },
   {
-    path: "/detail/1",
+    path: "/detail/:id",
     element: <ProductDetailPage />,
   },
   {

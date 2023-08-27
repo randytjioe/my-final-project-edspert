@@ -1,5 +1,17 @@
-import { Flex, Button } from "@chakra-ui/react";
+import {
+  Flex,
+  Button,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+} from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -30,45 +42,70 @@ export default function Navbar() {
           alignItems="center"
           gap="20px"
         >
-          <Button
-            color="#FFF"
-            fontFamily="Be Vietnam Pro"
-            fontSize="20px"
-            fontStyle="normal"
-            fontWeight="700"
-            lineHeight="normal"
-            bgColor="#2C3F58"
-            _hover={{ bgColor: "#FFF", color: "#2C3F58" }}
-            onClick={() => navigate("/")}
-          >
-            Product
-          </Button>
-          <Button
-            color="#FFF"
-            fontFamily="Be Vietnam Pro"
-            fontSize="20px"
-            fontStyle="normal"
-            fontWeight="700"
-            lineHeight="normal"
-            bgColor="#2C3F58"
-            _hover={{ bgColor: "#FFF", color: "#2C3F58" }}
-            onClick={() => navigate("/checkout")}
-          >
-            CheckOut
-          </Button>
-          <Button
-            color="#FFF"
-            fontFamily="Be Vietnam Pro"
-            fontSize="20px"
-            bgColor="#2C3F58"
-            _hover={{ bgColor: "#FFF", color: "#2C3F58" }}
-            fontStyle="normal"
-            fontWeight="700"
-            lineHeight="normal"
-            onClick={() => navigate("/instruksi-bayar")}
-          >
-            Instruksi Bayar
-          </Button>
+          <Menu>
+            <MenuButton
+              as={Button}
+              rightIcon={<IoIosArrowDown />}
+              color="#FFF"
+              fontFamily="Be Vietnam Pro"
+              fontSize="20px"
+              bgColor="#2C3F58"
+              _hover={{ bgColor: "#FFF", color: "#2C3F58" }}
+              fontStyle="normal"
+              fontWeight="700"
+              lineHeight="normal"
+            >
+              Program
+            </MenuButton>
+            <MenuList>
+              <MenuItem>Online Course</MenuItem>
+              <MenuItem>Mini bootcamp</MenuItem>
+              <MenuItem>Bootcamp</MenuItem>
+            </MenuList>
+          </Menu>
+          <Menu>
+            <MenuButton
+              as={Button}
+              rightIcon={<IoIosArrowDown />}
+              color="#FFF"
+              fontFamily="Be Vietnam Pro"
+              fontSize="20px"
+              bgColor="#2C3F58"
+              _hover={{ bgColor: "#FFF", color: "#2C3F58" }}
+              fontStyle="normal"
+              fontWeight="700"
+              lineHeight="normal"
+            >
+              Bidang ilmu
+            </MenuButton>
+            <MenuList>
+              <MenuItem>Digital marketing</MenuItem>
+              <MenuItem>Product management</MenuItem>
+              <MenuItem>English</MenuItem>
+              <MenuItem>Programming</MenuItem>
+            </MenuList>
+          </Menu>
+          <Menu>
+            <MenuButton
+              as={Button}
+              rightIcon={<IoIosArrowDown />}
+              color="#FFF"
+              fontFamily="Be Vietnam Pro"
+              fontSize="20px"
+              bgColor="#2C3F58"
+              _hover={{ bgColor: "#FFF", color: "#2C3F58" }}
+              fontStyle="normal"
+              fontWeight="700"
+              lineHeight="normal"
+            >
+              Tentang edspert
+            </MenuButton>
+            <MenuList>
+              <MenuItem>Bantuan</MenuItem>
+              <MenuItem>Kontak kami</MenuItem>
+              <MenuItem>Media sosial</MenuItem>
+            </MenuList>
+          </Menu>
           <Button
             display="flex"
             width="148px"

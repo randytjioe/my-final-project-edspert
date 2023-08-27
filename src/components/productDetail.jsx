@@ -3,7 +3,9 @@ import Frame from "../assets/Frame.png";
 import Product1 from "../assets/product.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Check from "../assets/check.png";
+import { useNavigate } from "react-router-dom";
 export default function ProductDetail() {
+  const navigate = useNavigate();
   return (
     <>
       <Flex
@@ -136,9 +138,16 @@ export default function ProductDetail() {
               flexShrink="0"
               borderRadius="50px"
               background="#FFCD29"
+              _hover={{
+                color: "var(--secondary-yellow, #FCBC30)",
+                background: "white",
+                border: "1px solid var(--secondary-yellow, #FCBC30)",
+              }}
+              onClick={(val) => {
+                navigate("/checkout");
+              }}
             >
               <Flex
-                color="var(--text-primary, #FFF)"
                 fontFamily="Be Vietnam Pro"
                 fontSize="14px"
                 fontStyle="normal"
@@ -433,12 +442,19 @@ export default function ProductDetail() {
             justifyContent="center"
             alignItems="center"
             gap="10px"
+            _hover={{
+              color: "var(--secondary-yellow, #FCBC30)",
+              background: "white",
+              border: "1px solid var(--secondary-yellow, #FCBC30)",
+            }}
             flexShrink="0"
             borderRadius="50px"
+            onClick={(val) => {
+              navigate("/checkout");
+            }}
             background="var(--secondary-yellow, #FCBC30)"
           >
             <Flex
-              color="var(--text-primary, #FFF)"
               fontFamily="Be Vietnam Pro"
               fontSize="14px"
               fontStyle="normal"

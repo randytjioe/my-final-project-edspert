@@ -41,6 +41,7 @@ export default function Footer() {
               </Flex>
               <Flex
                 color=" #A3A3A3"
+                w="411px"
                 fontFamily="Be Vietnam Pro"
                 fontSize="16px"
                 fontStyle="normal"
